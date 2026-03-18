@@ -1,0 +1,39 @@
+# Ignore everything
+*
+
+# Allow directories (so Git can traverse into them)
+!*/
+
+# Keep only these specific files
+!patch_clamp_hub.py
+!patch_clamp_analysis_helper.py
+!electrophysiology.ipynb
+
+# ---- Explicit ignores for common junk (redundant but safe/readable) ----
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Joblib / serialized objects
+*.joblib
+*.pkl
+
+# Logs
+*.log
+
+# Environment files
+.env
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
