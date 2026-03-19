@@ -1,39 +1,40 @@
 # Ignore everything
 *
 
-# Allow directories (so Git can traverse into them)
+# Allow directories
 !*/
 
-# Keep only these specific files
+# Keep only these files
 !patch_clamp_hub.py
 !patch_clamp_analysis_helper.py
 !electrophysiology.ipynb
+!README.md
+!.gitignore
 
-# ---- Explicit ignores for common junk (redundant but safe/readable) ----
-
-# Python cache
+# Jupyter / Python generated files
 __pycache__/
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Python artifacts
 *.pyc
 *.pyo
 
-# Joblib / serialized objects
-*.joblib
-*.pkl
-
 # Logs
 *.log
+
+# Serialized objects
+*.joblib
+*.pkl
 
 # Environment files
 .env
 .venv/
 venv/
 
-# macOS
-.DS_Store
-
 # IDE settings
 .vscode/
 .idea/
 
-# Jupyter checkpoints
-.ipynb_checkpoints/
+# macOS
+.DS_Store
